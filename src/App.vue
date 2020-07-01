@@ -1,16 +1,17 @@
 <template>
   <div class="container">
-    <router-link to="/page1">Go to Page 1</router-link>
-    <router-link to="/page2">Go to Page 2</router-link>
-
-    <h1>Vue router</h1>
+    <Header />
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import Header from "./components/Header.vue";
 export default {
-  name: 'App',
+  name: "App",
+  components: {
+    Header
+  }
 };
 </script>
 
