@@ -7,39 +7,55 @@
 
     <ul class="menu">
       <router-link tag="li" to="/page1" active-class="active" exact>
-        <a>Go to Page 1</a>
+        <a>Page 1</a>
       </router-link>
       <router-link tag="li" to="/page2" active-class="active" exact>
-        <a>Go to Page 2</a>
+        <a>Page 2</a>
+      </router-link>
+      <router-link tag="li" to="/maps" active-class="active" exact>
+        <a>Mapa</a>
+      </router-link>
+      <router-link tag="li" to="/test" active-class="active" exact>
+        <a>Otestuj se</a>
       </router-link>
     </ul>
   </div>
 </template>
-<style>
+
+<style scoped>
 .logo {
-  width: 50%;
+  padding-left: 30px;
+  max-width: 40%;
 }
 .header {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin: 20px 0 40px 0;
+  margin: -20px;
+  padding: 30px 0 0 30px;
+  background-color: white;
+  border-bottom: solid 30px #071d49;
 }
 .menu li {
   display: inline-block;
+  font-size: 20px;
 }
 .menu a {
   display: inline-block;
   text-decoration: none;
-  padding: 20px 30px;
-  font-weight: 300;
-  border-radius: 25px;
+  padding: 15px 15px;
+  font-weight: 600;
   color: #071d49;
+  font-size: 20px;
+  margin-left: 40px;
 }
 .menu li.active {
   border-radius: 7px 0 0 7px;
 }
 .menu a:hover {
-  background-color: #e8effd;
+  border-top: solid 3px #071d49;
+  text-decoration: none;
+
+  opacity: 0.6;
 }
 </style>
