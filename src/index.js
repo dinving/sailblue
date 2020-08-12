@@ -5,7 +5,7 @@ import Page2 from './components/Page2';
 import Header from './components/Header';
 import Carousel from './components/Carousel';
 import Homepage from './components/Homepage';
-import GoogleMap from './components/GoogleMap';
+// import GoogleMap from './components/GoogleMap';
 import Card from './components/Card';
 import Maps from './components/Maps';
 import Test from './components/Test';
@@ -18,15 +18,15 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.use(VueRouter);
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
-import * as VueGoogleMaps from 'vue2-google-maps';
+// import * as VueGoogleMaps from 'vue2-google-maps';
 
 
-Vue.use(VueGoogleMaps, {
-  load: {
-    key: 'AIzaSyDKj7UwiGJOqczLJiqBXWRaPB_3fKn0GZs',
-    libraries: 'places' // necessary for places input
-  }
-});
+// Vue.use(VueGoogleMaps, {
+//   load: {
+//     key: 'AIzaSyDKj7UwiGJOqczLJiqBXWRaPB_3fKn0GZs',
+//     libraries: 'places' // necessary for places input
+//   }
+// });
 
 const router = new VueRouter({
   mode: 'history',
@@ -36,9 +36,9 @@ const router = new VueRouter({
     { path: '/header', component: Header },
     { path: '/', component: Homepage },
     { path: '/carousel', component: Carousel },
-    { path: '/maps', component: GoogleMap },
+    // { path: '/maps', component: Maps },
     { path: '/card', component: Card },
-    { path: '/mapa', component: Maps },
+    { path: '/maps', component: Maps },
     { path: '/test', component: Test },
   ],
 });

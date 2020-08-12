@@ -2,21 +2,18 @@
   <!-- komponenta Header + logo - na všech pages -->
   <div class="header">
     <router-link to="/">
-      <img class="logo" src="assets/img/sailblue.png" alt="SailBlue" href />
+      <img class="logo" src="assets/img/sailblue-white.png" alt="SailBlue" href />
     </router-link>
 
     <ul class="menu">
       <router-link tag="li" to="/page1" active-class="active" exact>
-        <a>Page 1</a>
+        <a>O projektu</a>
       </router-link>
       <router-link tag="li" to="/page2" active-class="active" exact>
-        <a>Page 2</a>
+        <a>Otestuj se</a>
       </router-link>
       <router-link tag="li" to="/maps" active-class="active" exact>
         <a>Mapa</a>
-      </router-link>
-      <router-link tag="li" to="/test" active-class="active" exact>
-        <a>Otestuj se</a>
       </router-link>
     </ul>
   </div>
@@ -33,29 +30,32 @@
   align-items: center;
   margin: -20px;
   padding: 30px 0 0 30px;
-  background-color: white;
-  border-bottom: solid 30px #071d49;
+  background-color: #071d49;
+  /* border-bottom: solid 30px white; */
+  position: sticky;
 }
 .menu li {
   display: inline-block;
   font-size: 20px;
+  padding: 0 10px 0 10px;
 }
 .menu a {
   display: inline-block;
   text-decoration: none;
-  padding: 15px 15px;
+
   font-weight: 600;
-  color: #071d49;
+  color: white;
   font-size: 20px;
-  margin-left: 40px;
+  margin-left: 150px;
+  padding: 0 10px 0 10px;
 }
 .menu li.active {
   border-radius: 7px 0 0 7px;
 }
 .menu a:hover {
-  border-top: solid 3px #071d49;
+  border-top: solid 3px white;
   text-decoration: none;
-
-  opacity: 0.6;
+  color: white;
+  padding: 10px;
 }
 </style>
